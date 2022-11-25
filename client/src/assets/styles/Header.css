@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    height: 5rem;
+}
+
+ul {
+    display: flex;
+}
+
+.logo__container > img {
+    height: 100%;
+}
+
+.btn__design {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav__dropdown {
+    display: none;
+}
+
+.nav__option:hover .nav__dropdown {
+    display: block;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
