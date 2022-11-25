@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/Header.css'
+import headIco from '../assets/images/skidmore.png'
 
 export default function Header() {
     return (
