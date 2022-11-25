@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header>
             <figure className='logo__container'>
-                <img src={headIco} alt='' />
+                <img src={headIco} />
             </figure>
             <nav className='nav__options'>
                 <ul>
