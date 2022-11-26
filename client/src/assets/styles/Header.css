@@ -46,5 +46,5 @@ header {
     background-color: rgb(255, 255, 255);
     padding: 2em;
     width: 18.5em;
-    border: 1px solid lightgray;
+    border: 0.1em solid lightgray;
 }
