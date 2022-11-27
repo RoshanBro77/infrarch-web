@@ -1,0 +1,32 @@
+.firstSection {
+    position: relative;
+    text-align: right;
+}
+.firstSection > img {
+    padding-right: 1em;
+    height: 81vh;
+    width: 64vw;
+}
+.switch__ImageIcons {
+    display: flex;
+    gap: 2em;
+    align-items: flex-end;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.firsSection__floating__container {
+    padding: 2em;
+    position: absolute;
+    text-align: left;
+    gap: 1em;
+    width: 43em;
+    bottom: 0.5em;
+    background-color: lightblue;
+    display: flex;
+}
+.switch__ImageInfo > h5 {
+    font-weight: 100;
+}
+.switch__ImageInfo {
+    height: 23em;
+}
