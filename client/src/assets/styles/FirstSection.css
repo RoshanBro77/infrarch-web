@@ -20,7 +20,7 @@
     text-align: left;
     gap: 1em;
     width: 43em;
-    bottom: 0.5em;
+    top: 1em;
     background-color: lightblue;
     display: flex;
 }
@@ -28,5 +28,5 @@
     font-weight: 100;
 }
 .switch__ImageInfo {
-    height: 23em;
+    height: 25.5em;
 }
