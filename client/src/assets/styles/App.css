@@ -12,3 +12,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.imageDescription {
+    padding-top: 2.9em;
+    height: 6em;
+}
+.Image__title {
+    font-size: 3.7rem;
+    font-weight: 100;
+    padding-top: 0.5em;
+}
+
+.switch__ImageInfo__button {
+    padding: 1em 3em;
+    font-weight: 100;
+    background-color: white;
+    border: 0.1em solid black;
+}
