@@ -1,0 +1,18 @@
+.imageCard {
+    width: 40vw;
+}
+
+.portfolio__img {
+    width: 100%;
+}
+
+.portfolio__img > img {
+    width: 100%;
+    height: 40vh;
+}
+
+.portfolio__title {
+}
+
+.portfolio__date {
+}

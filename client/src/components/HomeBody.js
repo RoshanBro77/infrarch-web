@@ -1,12 +1,13 @@
 import React from 'react'
 import '../assets/styles/HomeBody.css'
 import FirstSection from './FirstSection'
-function HomeBody() {
+import SecondSection from './SecondSection'
+
+export default function HomeBody() {
     return (
         <main className='homebody'>
-            <FirstSection></FirstSection>
+            <FirstSection />
+            <SecondSection />
         </main>
     )
 }
-
-export default HomeBody

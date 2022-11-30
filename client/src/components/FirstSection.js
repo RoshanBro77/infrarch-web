@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/styles/FirstSection.css'
-import firstSection__Image from '../assets/images/goku.jpg'
+import firstSection__Image from '../assets/images/firstSectionImg.jpg'
+
 function FirstSection() {
     return (
         <section className='firstSection'>

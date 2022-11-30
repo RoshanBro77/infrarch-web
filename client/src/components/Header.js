@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/styles/Header.css'
 import headIco from '../assets/images/skidmore.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -60,9 +61,15 @@ export default function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <div className='btn__design'>OUR TEAM</div>
-                        <div className='btn__design'>PORTFOLIO</div>
-                        <div className='btn__design'>CONTACT US</div>
+                        <div className='btn__design'>
+                            <NavLink to="/our-team">OUR TEAM</NavLink>
+                        </div>
+                        <div className='btn__design'>
+                            <NavLink to='/portfolio'>PORTFOLIO</NavLink>
+                        </div>
+                        <div className='btn__design'>
+                            <NavLink>CONTACT US</NavLink>
+                        </div>
                     </ul>
                 </nav>
             </div>

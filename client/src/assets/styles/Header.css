@@ -1,6 +1,11 @@
 header {
     border-bottom: 0.1em solid lightgray;
+    background-color: #fff;
+    z-index: 99;
+    top: 0;
+    position: sticky;
 }
+
 .header__contains {
     position: relative;
     padding: 1.7em;
@@ -18,19 +23,21 @@ header {
     background: none;
     cursor: pointer;
     font-size: 0.85rem;
-    text-decoration: none;
 }
+
 .btn__design:hover {
     text-decoration: underline;
     text-underline-offset: 0.4em;
     transition: 300ms;
 }
+
 .nav__dropdown {
     display: none;
     position: absolute;
     padding-top: 3.15em;
     justify-content: space-evenly;
 }
+
 .nav__option:hover .nav__dropdown {
     display: block;
 }
@@ -39,9 +46,11 @@ header {
     list-style: none;
     cursor: pointer;
 }
+
 .nav__drowdown__content + .nav__drowdown__content {
     padding-top: 1em;
 }
+
 .nav__dropdown > ul {
     background-color: rgb(255, 255, 255);
     padding: 2em;
