@@ -2,11 +2,13 @@
     position: relative;
     text-align: right;
 }
+
 .firstSection > img {
     padding-right: 1em;
     height: 81vh;
     width: 64vw;
 }
+
 .switch__ImageIcons {
     display: flex;
     gap: 2em;
@@ -14,6 +16,7 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+
 .firsSection__floating__container {
     padding: 2em;
     position: absolute;
@@ -24,9 +27,11 @@
     background-color: lightblue;
     display: flex;
 }
+
 .switch__ImageInfo > h5 {
     font-weight: 100;
 }
+
 .switch__ImageInfo {
     height: 25.5em;
 }

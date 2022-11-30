@@ -11,12 +11,19 @@ const db = mysql.createPool({
     user: 'root',
     host: 'localhost',
     password: '123Rabbit',
-    database: 'infrarch-web',
+    database: 'infrarch',
 })
 
-app.get('/endpoint', (req, res) => {
-    const sqlGet = 'some query here :D'
-    db.query(sqlGet, (error, result) => {
+app.get('/portfolio/images', (req, res) => {
+    const ppImg = 'SELECT * FROM infrarch.portfolio;'
+    db.query(ppImg, (error, result) => {
+        res.send(result)
+    })
+})
+
+app.get('/team/images', (req, res) => {
+    const ppImg = 'SELECT * FROM infrarch.team_intro;'
+    db.query(ppImg, (error, result) => {
         res.send(result)
     })
 })
