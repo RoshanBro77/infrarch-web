@@ -13,7 +13,7 @@ export default function TeamInfo() {
     }, [])
 
     return (
-        <div className='teamInfo'>
+        <div className='teamInfo marginLeftRight '>
             <div className='about__team'>
                 <div className='about__title'>
                     <p>Our expert team. Who we are</p>
