@@ -1,15 +1,18 @@
 import React from 'react'
 import '../assets/styles/Footer.css'
 import footImg from '../assets/images/skidmore.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__options'>
                 <div className='footer__column'>
-                    <figure className='footer__Img'>
-                        <img src={footImg} alt='infrarch' />
-                    </figure>
+                    <NavLink style={{ textDecoration: 'none' }}>
+                        <figure className='footer__Img'>
+                            <img src={footImg} alt='infrarch' />
+                        </figure>
+                    </NavLink>
                 </div>
                 <div className='footer__column'>
                     <div className='footer__detail detail'>

@@ -7,9 +7,11 @@ export default function Header() {
     return (
         <header>
             <div className='header__contains marginLeftRight'>
-                <figure className='logo__container'>
-                    <img src={headIco} height='60px' />
-                </figure>
+                <NavLink to='/'>
+                    <figure className='logo__container'>
+                        <img src={headIco} height='60px' />
+                    </figure>
+                </NavLink>
                 <nav className='nav__options'>
                     <ul>
                         <div className='nav__option'>
@@ -62,13 +64,36 @@ export default function Header() {
                             </div>
                         </div>
                         <div className='btn__design'>
-                            <NavLink to="/our-team">OUR TEAM</NavLink>
+                            <NavLink
+                                to='/our-team'
+                                style={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}
+                            >
+                                OUR TEAM
+                            </NavLink>
                         </div>
                         <div className='btn__design'>
-                            <NavLink to='/portfolio'>PORTFOLIO</NavLink>
+                            <NavLink
+                                to='/portfolio'
+                                style={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}
+                            >
+                                PORTFOLIO
+                            </NavLink>
                         </div>
                         <div className='btn__design'>
-                            <NavLink>CONTACT US</NavLink>
+                            <NavLink
+                                style={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}
+                            >
+                                CONTACT US
+                            </NavLink>
                         </div>
                     </ul>
                 </nav>
