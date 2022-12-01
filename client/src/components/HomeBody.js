@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/HomeBody.css'
+import ClientTestimonal from './ClientTestimonal'
 import FirstSection from './FirstSection'
 import SecondSection from './SecondSection'
 
@@ -8,6 +9,7 @@ export default function HomeBody() {
         <main className='homebody'>
             <FirstSection />
             <SecondSection />
+            <ClientTestimonal />
         </main>
     )
 }

@@ -28,6 +28,13 @@ app.get('/team/images', (req, res) => {
     })
 })
 
+app.get('/client/testimonal', (req, res) => {
+    const testimonal = 'SELECT * FROM infrarch.testimonals;'
+    db.query(testimonal, (error, result) => {
+        res.send(result)
+    })
+})
+
 app.listen(5001, (err) => {
     if (!err) {
         console.log('provider server is running on port 5001')
