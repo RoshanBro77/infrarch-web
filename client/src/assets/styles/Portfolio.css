@@ -1,6 +1,21 @@
+.path {
+    letter-spacing: 0.3em;
+    font-size: 0.7em;
+    display: flex;
+    padding-left: 3.5em;
+    background-color: #faf8f7;
+}
+.path > p {
+    padding: 3.5em 0em 3.5em 0em;
+}
 
 .portfolio__card {
     display: flex;
     flex-wrap: wrap;
-    /* width: 20vw; */
+    gap: 1em;
+    width: 95%;
+    margin: 0 auto;
+}
+.portfolio {
+    text-align: center;
 }

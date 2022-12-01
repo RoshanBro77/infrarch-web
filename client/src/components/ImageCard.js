@@ -7,8 +7,12 @@ const ImageCard = ({ p_id, displayImg, displayTitle, displayDate }) => {
             <figure className='portfolio__img'>
                 <img src={displayImg} alt='' />
             </figure>
-            <p className='portfolio__title'>{displayTitle}</p>
-            <p className='portfolio__date'>{displayDate}</p>
+            <div className='imageDetails'>
+                <div className='imageDetail'>
+                    <p className='portfolio__title'>{displayTitle}</p>
+                    <p className='portfolio__date'>{displayDate}</p>
+                </div>
+            </div>
         </div>
     )
 }

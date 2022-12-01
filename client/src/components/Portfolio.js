@@ -18,7 +18,8 @@ export default function Portfolio() {
     return (
         <section className='portfolio'>
             <div className='path'>
-                <p>HOME | PORTFOLIO</p>
+                <p>HOME </p>
+                <p style={{ color: '#8C8590' }}>| PORTFOLIO</p>
             </div>
             <figure className='portfolio__card'>
                 {console.table(portfolioData)}
