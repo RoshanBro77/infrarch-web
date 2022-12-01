@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import ImageCard from './ImageCard'
 
 function ProjectShowcase() {
     const [portfolioData, setportfolioData] = useState([])
@@ -16,17 +17,12 @@ function ProjectShowcase() {
     return (
         <div className='projectShowcase'>
             <p>NEW PROJECTS | RESIDENTIAL HOMES</p>
-            <div className='projectList'>
-                {portfolioData.map((project, id) => {
-                    return (
-                        <div className='project' key={id}>
-                            <figure>
-                                <img src='' alt='' />
-                            </figure>
-                        </div>
-                    )
+            <figure className='portfolio__card'>
+                {console.table(portfolioData)}
+                {portfolioData.map((portfolio, p_id) => {
+                    return <ImageCard key={p_id} {...portfolio} />
                 })}
-            </div>
+            </figure>
         </div>
     )
 }
