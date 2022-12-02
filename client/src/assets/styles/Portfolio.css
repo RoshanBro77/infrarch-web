@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-.portfolio__card {
-    display: flex;
-    flex-wrap: wrap;
-=======
 .path {
     letter-spacing: 0.3em;
     font-size: 0.7em;
@@ -23,5 +18,4 @@
 }
 .portfolio {
     text-align: center;
->>>>>>> 0749e1cab51aa97087eac038be552285d6627ab8
 }
