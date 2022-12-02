@@ -1,0 +1,35 @@
+.housePlans {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.plan__types {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planImg {
+    width: 22em;
+    height: 10em;
+}
+
+.middle__content {
+    margin: auto;
+    text-align: center;
+}
+
+.house__planList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.house__planImg {
+    width: 22em;
+}
+
+.house__planImg > img {
+    width: 100%;
+}
