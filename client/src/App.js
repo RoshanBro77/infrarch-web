@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './components/Portfolio'
 import SocialMediaNav from './components/SocialMediaNav'
 import TeamInfo from './components/TeamInfo'
+import ContactPage from './components/ContactPage'
 
 export default function App() {
     return (
@@ -20,6 +21,7 @@ export default function App() {
                         <Route path='/' element={<HomeBody />} />
                         <Route path='/our-team' element={<TeamInfo />} />
                         <Route path='/portfolio' element={<Portfolio />} />
+                        <Route path='/contact' element={<ContactPage />} />
                         <Route path='*' element={<NotFound />} />
                     </Routes>
                 </div>
