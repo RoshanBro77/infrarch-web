@@ -87,6 +87,7 @@ export default function Header() {
                         </div>
                         <div className='btn__design'>
                             <NavLink
+                                to={'/contact'}
                                 style={{
                                     textDecoration: 'none',
                                     color: 'black',
