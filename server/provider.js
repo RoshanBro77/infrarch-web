@@ -35,6 +35,13 @@ app.get('/client/testimonal', (req, res) => {
     })
 })
 
+app.get('/house/plans', (req, res) => {
+    const housePlans = 'SELECT * FROM infrarch.house_plans;'
+    db.query(housePlans, (error, result) => {
+        res.send(result)
+    })
+})
+
 app.listen(5001, (err) => {
     if (!err) {
         console.log('provider server is running on port 5001')
