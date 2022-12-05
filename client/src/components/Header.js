@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom'
 export default function Header() {
     return (
         <header>
-            <div className='header__contains marginLeftRight'>
+            <div className='header__contains'>
                 <NavLink to='/'>
                     <figure className='logo__container'>
-                        <img src={headIco} height='60px' />
+                        <img src={headIco} height='60px' alt='infrarch' />
                     </figure>
                 </NavLink>
                 <nav className='nav__options'>
@@ -18,9 +18,11 @@ export default function Header() {
                             <button className='btn__design'>DESIGN</button>
                             <div className='nav__dropdown'>
                                 <ul>
-                                    <li className='nav__drowdown__content'>
-                                        House Plans
-                                    </li>
+                                    <NavLink to='house-plans'>
+                                        <li className='nav__drowdown__content'>
+                                            House Plans
+                                        </li>
+                                    </NavLink>
                                 </ul>
                             </div>
                         </div>

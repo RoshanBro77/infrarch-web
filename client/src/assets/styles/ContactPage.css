@@ -3,36 +3,44 @@
     margin: 0 auto;
     margin-top: 5em;
 }
+
 .contact__skidmore {
     display: flex;
     flex-wrap: wrap;
 }
+
 .image {
     flex: 60%;
     max-width: 60%;
 }
+
 .image > img {
     width: 100%;
     height: 93%;
 }
+
 .contact__details {
     flex: 40%;
     padding: 6em 3em;
 }
+
 .contact__details > h3 {
     font-family: Questrial, sans-serif;
     font-size: 2.6875rem;
     font-weight: 400;
 }
+
 .contactSubTitle {
     font-size: 1.3rem;
     font-weight: 100;
     padding-bottom: 1em;
 }
+
 .contactDetails {
     font-size: 1.1rem;
     margin: 0.5em 0;
 }
+
 .subDetails {
     margin: 3.5em 0;
 }

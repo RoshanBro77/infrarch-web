@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio'
 import SocialMediaNav from './components/SocialMediaNav'
 import TeamInfo from './components/TeamInfo'
 import ContactPage from './components/ContactPage'
+import HousePlans from './components/HousePlans'
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
                 <div className='app__container'>
                     <Routes>
                         <Route path='/' element={<HomeBody />} />
+                        <Route path='/house-plans' element={<HousePlans />} />
                         <Route path='/our-team' element={<TeamInfo />} />
                         <Route path='/portfolio' element={<Portfolio />} />
                         <Route path='/contact' element={<ContactPage />} />

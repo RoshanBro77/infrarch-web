@@ -8,11 +8,14 @@ header {
 
 .header__contains {
     position: relative;
-    padding: 1.7em;
+    padding: 1.7em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
 }
+
 .nav__options > ul {
     gap: 2em;
     display: flex;
@@ -54,6 +57,8 @@ header {
 
 .nav__dropdown > ul {
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 99;
     padding: 2em;
     width: 18.5em;
     border: 0.1em solid lightgray;

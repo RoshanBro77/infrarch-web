@@ -4,10 +4,6 @@ import image from '../assets/images/contactPageImg.jpg'
 function ContactPage() {
     return (
         <section className='contact '>
-            <div className='path'>
-                <p>HOME </p>
-                <p style={{ color: '#8C8590' }}>| CONTACT US</p>
-            </div>
             <div className='contact__contents'>
                 <div className='contact__skidmore'>
                     <div className='image'>

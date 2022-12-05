@@ -12,9 +12,9 @@
     box-sizing: border-box;
 }
 
-.marginLeftRight {
-    width: 95%;
-    margin: 0 auto;
+.app__container {
+    width: 88%;
+    margin: 3em auto;
 }
 
 .project__Showcase {
