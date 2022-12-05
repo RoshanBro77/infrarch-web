@@ -15,36 +15,55 @@ export default function HousePlans() {
         getplans()
     }, [])
 
+    const planCards = [
+        {
+            imgSrc: predesigned,
+            planTitle: 'Our Predesigned Plans',
+            planDesc: 'Through the years of building and drawing homes ',
+        },
+        {
+            imgSrc: sketch,
+            planTitle: 'Our Predesigned Plans',
+            planDesc: 'we have many plans available to choose from',
+        },
+        {
+            imgSrc: gettingStarted,
+            planTitle: 'Our Predesigned Plans',
+            planDesc: 'or help inspire your own plans',
+        },
+    ]
+
     return (
         <div className='housePlans'>
             <div className='plan__types'>
-                <figure className='planImg'>
-                    <img src={predesigned} alt='Predesigned Plan' />
-                    <p>Our Predesigned Plans</p>
+                {planCards.map((cards, id) => {
+                    return (
+                        <figure className='planImg' key={id}>
+                            <img src={cards.imgSrc} alt='Predesigned Plan' />
+                            <h4>{cards.planTitle} </h4>
+                            <p>{cards.planDesc}</p>
+                        </figure>
+                    )
+                })}
+                {/* 
                     <p>
                         Through the years of building and drawing homes, we have
                         many plans available to choose from or help inspire your
                         own plans
                     </p>
-                </figure>
-                <figure className='planImg'>
-                    <img src={sketch} alt='Sketch Plan' />
-                    <p>Start From Scratch</p>
+                
                     <p>
                         Our team can sit down, draw, and build your dream. We
                         have the training and experience to draw your plan at
                         Skidmore Inc.
                     </p>
-                </figure>
-                <figure className='planImg'>
-                    <img src={gettingStarted} alt='Getting Started' />
-                    <p>Getting Started</p>
+               
                     <p>
                         Skidmore Inc has a draftsman and designer who can draw
                         and design what you are looking for. Call us to schedule
                         a time and get started.
                     </p>
-                </figure>
+                */}
             </div>
             <div className='middle__content'>
                 <p>Build Your Dreams Today</p>
@@ -57,7 +76,7 @@ export default function HousePlans() {
                             <figure className='house__planImg'>
                                 <img src={plans.planImg} alt='House Plan Img' />
                             </figure>
-                            <p>{plans.planName}</p>
+                            <h4>{plans.planName}</h4>
                             <p>Main – {plans.mainArea} sqft</p>
                             <p>Upper Floor – {plans.upperArea} sqft</p>
                             <p>Basement Floor – {plans.basementArea} sqft</p>

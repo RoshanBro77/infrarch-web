@@ -6,7 +6,6 @@ import HomeBody from './components/HomeBody'
 import NotFound from './components/NotFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './components/Portfolio'
-import SocialMediaNav from './components/SocialMediaNav'
 import TeamInfo from './components/TeamInfo'
 import ContactPage from './components/ContactPage'
 import HousePlans from './components/HousePlans'
@@ -16,7 +15,6 @@ export default function App() {
         <Router>
             <div className='app'>
                 <Header />
-                {/* <SocialMediaNav /> */}
                 <div className='app__container'>
                     <Routes>
                         <Route path='/' element={<HomeBody />} />
