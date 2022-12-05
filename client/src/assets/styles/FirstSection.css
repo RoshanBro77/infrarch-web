@@ -6,7 +6,7 @@
 .firstSection > img {
     padding-right: 1em;
     height: 81vh;
-    width: 64vw;
+    width: 70%;
 }
 .slider {
     cursor: pointer;
@@ -27,7 +27,7 @@
 }
 
 .firsSection__floating__container {
-    padding: 2em;
+    padding: 2em 0;
     position: absolute;
     text-align: left;
     gap: 1em;
