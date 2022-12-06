@@ -3,13 +3,13 @@ header {
     background-color: #fff;
     z-index: 99;
     top: 0;
-    /* position: sticky; */
 }
 
 .header__contains {
     position: relative;
     padding: 1.7em 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 88%;
@@ -19,6 +19,7 @@ header {
 .nav__options > ul {
     gap: 2em;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .btn__design {
@@ -28,7 +29,6 @@ header {
     font-size: 0.85rem;
     color: black;
 }
-
 .btn__design:hover {
     text-decoration: underline;
     text-underline-offset: 0.4em;
@@ -54,10 +54,12 @@ header {
 .nav__drowdown__content + .nav__drowdown__content {
     padding-top: 1em;
 }
-
+.navLink {
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+}
 .nav__dropdown > ul {
     background-color: rgb(255, 255, 255);
-    position: absolute;
     z-index: 99;
     padding: 2em;
     width: 18.5em;
