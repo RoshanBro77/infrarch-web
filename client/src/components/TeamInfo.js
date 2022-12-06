@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import '../assets/styles/TeamInfo.css'
 
 export default function TeamInfo() {
@@ -39,7 +40,12 @@ export default function TeamInfo() {
                 {memberData.map((member, member_id) => {
                     return (
                         <div className='member__info' key={member_id}>
-                            <img src={member.member_img} alt='' />
+                            <LazyLoadImage
+                                className='teamImg'
+                                src={member.member_img}
+                                placeholderSrc={member.member_img}
+                                effect='black-and-white'
+                            />
                             <p>{member.member_fullName}</p>
                             <p>{member.member_role}</p>
                         </div>

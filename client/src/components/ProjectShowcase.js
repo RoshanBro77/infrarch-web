@@ -17,7 +17,9 @@ function ProjectShowcase() {
 
     return (
         <div className='projectShowcase'>
-            <p className='project__Showcase'>NEW PROJECTS | RESIDENTIAL HOMES</p>
+            <p className='project__Showcase'>
+                NEW PROJECTS | RESIDENTIAL HOMES
+            </p>
             <p className='project__ShowcaseTitle'>Follow our projects</p>
             <figure className='portfolio__card'>
                 {console.table(portfolioData)}

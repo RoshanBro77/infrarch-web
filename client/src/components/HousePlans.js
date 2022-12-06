@@ -39,7 +39,11 @@ export default function HousePlans() {
                 {planCards.map((cards, id) => {
                     return (
                         <figure className='planImg' key={id}>
-                            <img src={cards.imgSrc} alt='Predesigned Plan' />
+                            <img
+                                src={cards.imgSrc}
+                                alt='Predesigned Plan'
+                                loading='lazy'
+                            />
                             <h4>{cards.planTitle} </h4>
                             <p>{cards.planDesc}</p>
                         </figure>
@@ -74,7 +78,11 @@ export default function HousePlans() {
                     return (
                         <div className='house__plan' id='plan_id'>
                             <figure className='house__planImg'>
-                                <img src={plans.planImg} alt='House Plan Img' />
+                                <img
+                                    src={plans.planImg}
+                                    alt='House Plan Img'
+                                    loading='lazy'
+                                />
                             </figure>
                             <h4>{plans.planName}</h4>
                             <p>Main – {plans.mainArea} sqft</p>
