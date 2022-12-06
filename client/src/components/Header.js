@@ -18,11 +18,14 @@ export default function Header() {
                             <button className='btn__design'>DESIGN</button>
                             <div className='nav__dropdown'>
                                 <ul>
-                                    <NavLink to='house-plans'>
-                                        <li className='nav__drowdown__content'>
+                                    <li className='nav__drowdown__content'>
+                                        <NavLink
+                                            className='navLink'
+                                            to='house-plans'
+                                        >
                                             House Plans
-                                        </li>
-                                    </NavLink>
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
