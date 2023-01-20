@@ -3,13 +3,14 @@ import predesigned from '../assets/images/Anioch-Plan.jpg'
 import sketch from '../assets/images/Sketch.jpg'
 import gettingStarted from '../assets/images/Getting-Started.jpg'
 import '../assets/styles/HousePlans.css'
+import { NavLink } from 'react-router-dom'
 
 export default function HousePlans() {
     const [plans, setPlans] = useState([])
 
     useEffect(() => {
         const getplans = async () => {
-            const response = await fetch('http://localhost:5001/house/plans')
+            const response = await fetch('http://localhost:5001/api/designs')
             setPlans(await response.json())
         }
         getplans()
@@ -70,26 +71,25 @@ export default function HousePlans() {
                 */}
             </div>
             <div className='middle__content'>
-                <p>Build Your Dreams Today</p>
-                <p>House Plans</p>
+                <NavLink to='/contact'>
+                    <button className='explore'>
+                        <p>Build Your Dreams Today</p>
+                    </button>
+                </NavLink>
+                <p>Some Masterplan and 3D Photographs</p>
             </div>
             <div className='house__planList'>
-                {plans.map((plans, plan_id) => {
+                {plans.map((plan, plan_id) => {
                     return (
                         <div className='house__plan' id='plan_id'>
                             <figure className='house__planImg'>
                                 <img
-                                    src={plans.planImg}
+                                    src={plan.designImg}
                                     alt='House Plan Img'
                                     loading='lazy'
                                 />
                             </figure>
-                            <h4>{plans.planName}</h4>
-                            <p>Main – {plans.mainArea} sqft</p>
-                            <p>Upper Floor – {plans.upperArea} sqft</p>
-                            <p>Basement Floor – {plans.basementArea} sqft</p>
-                            <p>{plans.bedSum} Bed</p>
-                            <p>{plans.bathSum} Bath</p>
+                            <p>{plan.designTitle}</p>
                         </div>
                     )
                 })}

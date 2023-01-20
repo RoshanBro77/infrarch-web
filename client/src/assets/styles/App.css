@@ -83,3 +83,16 @@ body {
     background-color: white;
     border: 0.1em solid black;
 }
+
+.explore {
+    margin-top: 2em;
+    height: 3em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #919191;
+    cursor: pointer;
+}
+
+.explore > p {
+    margin: 0.8em;
+}

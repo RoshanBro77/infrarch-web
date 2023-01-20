@@ -7,7 +7,9 @@ export default function TeamInfo() {
 
     useEffect(() => {
         const getMemberData = async () => {
-            const response = await fetch('http://localhost:5001/team/images')
+            const response = await fetch(
+                'http://localhost:5001/api/team_members'
+            )
             setmemberData(await response.json())
         }
         getMemberData()
@@ -21,18 +23,23 @@ export default function TeamInfo() {
                 </div>
                 <div className='about__desc'>
                     <p>
-                        In 1956 Dick Skidmore came to Idaho Falls to frame
-                        houses. After spending the summer here, he decided to
-                        stay and start Skidmore Construction in 1958. Dick grew
-                        up on a farm which taught him hard work ethics, later in
-                        life he joined the army and upon his return he started
-                        as a carpenter apprentice. This gave him the experience
-                        he needed to build homes. His beautiful wife Bon Adell
-                        who grew up down the road from him in Richmond, UT. was
-                        very creative. Bon Adell painted photos while Dick was
-                        in the army, she had a natural gift working with color
-                        palettes and design. This complimented their building
-                        business as she provided interior designing.
+                        Codenix Engineering Consultancy is an engineering firm
+                        based in Kathmandu that was established in 2020 A.D. The
+                        location of this company is Thapagaun, Kathmandu-10. It
+                        has a total of 25 employees and is regarded as a
+                        medium-sized company. It has already catered to 50+
+                        private clients & more than 10+ government offices for
+                        consulting works and about 5 private construction works.
+                        It has plans to expand in its own building by 2025 and
+                        plans to employee 50+ staffs
+                        <br />
+                        It is committed to providing engineering, construction,
+                        software, IT along with media related services. The team
+                        boasts of experienced professionals of relevant sector
+                        aiming to bring about a change in the future. The utmost
+                        satisfaction in its valued clients speaks volume of the
+                        great success it has had in the market in such short
+                        span since establishment.
                     </p>
                 </div>
             </div>

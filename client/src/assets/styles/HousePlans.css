@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+.middle__content > p {
+    font-size: 2.4rem;
+}
+
 .house__planList {
     display: flex;
     flex-wrap: wrap;

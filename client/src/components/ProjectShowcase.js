@@ -7,9 +7,7 @@ function ProjectShowcase() {
 
     useEffect(() => {
         const getPortfolioDetails = async () => {
-            const response = await fetch(
-                'http://localhost:5001/portfolio/images'
-            )
+            const response = await fetch('http://localhost:5001/api/portfolio')
             setportfolioData(await response.json())
         }
         getPortfolioDetails()

@@ -33,10 +33,11 @@
 .team__info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .member__info {
-    width: 29em;
+    width: 20em;
     padding: 2em;
 }
 

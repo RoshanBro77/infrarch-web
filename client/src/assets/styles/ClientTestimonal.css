@@ -7,6 +7,7 @@
     letter-spacing: 0.025em;
     margin: 25px 0;
 }
+
 .testimonals {
     margin: 0 7vw;
 }
@@ -16,25 +17,24 @@
     row-gap: 1em;
     flex-wrap: wrap;
 }
+
 .testimonal {
-    width: 20vw;
+    width: 24vw;
 }
 
-.test_description {
-    margin: 0 0 6px;
-    font-family: 'Roboto', sans-serif;
+.testimonal > p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    line-height: 1.65em;
-    font-weight: 300;
+    margin: 0 0.6em;
+    line-height: 1.6em;
     letter-spacing: 0.01em;
-    color: #121212;
+    color: #121212d7;
 }
 
 .client {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     line-height: 1em;
-    font-weight: 500;
     letter-spacing: 0.25em;
     color: #a2a2a2;
     text-transform: uppercase;

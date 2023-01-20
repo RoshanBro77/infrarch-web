@@ -8,16 +8,20 @@
     height: 81vh;
     width: 70%;
 }
+
 .slider {
     cursor: pointer;
 }
+
 .slider > img {
     height: 2.5em;
 }
+
 .slider :hover {
     transform: scale(115%);
     transition: 0.2s ease-in;
 }
+
 .switch__ImageIcons {
     display: flex;
     gap: 2em;

@@ -31,42 +31,39 @@ export default function Header() {
                         </div>
 
                         <div className='nav__option'>
-                            <button className='btn__design'>BUILD</button>
-                            <div className='nav__dropdown'>
-                                <ul>
-                                    <li className='nav__drowdown__content'>
-                                        Resedential Build
-                                    </li>
-                                    <li className='nav__drowdown__content'>
-                                        Commercial Build
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='nav__option'>
-                            <button className='btn__design'>DEVELOPMENT</button>
-                            <div className='nav__dropdown'>
-                                <ul>
-                                    <li className='nav__drowdown__content'>
-                                        Resedential Development
-                                    </li>
-                                    <li className='nav__drowdown__content'>
-                                        Commercial Development
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='nav__option'>
                             <button className='btn__design'>
-                                ACTIVE LISTINGS
+                                CONSTRUCTION
                             </button>
                             <div className='nav__dropdown'>
                                 <ul>
                                     <li className='nav__drowdown__content'>
-                                        Rental Space for Lease
+                                        Publications
+                                    </li>
+                                    <li className='nav__drowdown__content'>
+                                        Building plans
+                                    </li>
+                                    <li className='nav__drowdown__content'>
+                                        Roads
+                                    </li>
+                                    <li className='nav__drowdown__content'>
+                                        Bridges and Culverts
+                                    </li>
+                                    <li className='nav__drowdown__content'>
+                                        Other Infrastructures
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <div className='btn__design'>
+                            <NavLink
+                                to='/our-team'
+                                style={{
+                                    textDecoration: 'none',
+                                    color: 'black',
+                                }}
+                            >
+                                CLIENTELE
+                            </NavLink>
                         </div>
                         <div className='btn__design'>
                             <NavLink

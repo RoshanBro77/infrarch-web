@@ -1,7 +1,8 @@
 import React from 'react'
 import '../assets/styles/ContactPage.css'
 import image from '../assets/images/contactPageImg.jpg'
-function ContactPage() {
+
+export default function ContactPage() {
     return (
         <section className='contact '>
             <div className='contact__contents'>
@@ -71,11 +72,8 @@ function ContactPage() {
                                 placeholder='write a message...'
                             ></textarea>
                             <div className='button'>
-                                <button
-                                    className='Submit__button'
-                                    type='submit'
-                                >
-                                    SUBMIT
+                                <button className='explore' type='submit'>
+                                    <p>SUBMIT</p>
                                 </button>
                             </div>
                         </form>
@@ -85,5 +83,3 @@ function ContactPage() {
         </section>
     )
 }
-
-export default ContactPage

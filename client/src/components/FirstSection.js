@@ -3,6 +3,7 @@ import '../assets/styles/FirstSection.css'
 import firstSection__Image from '../assets/images/firstSectionImg.jpg'
 import leftArrow from '../assets/images/leftArrow.png'
 import rightArrow from '../assets/images/rightArrow.png'
+import { NavLink } from 'react-router-dom'
 
 export default function FirstSection() {
     return (
@@ -18,15 +19,18 @@ export default function FirstSection() {
                     </div>
                 </div>
                 <div className='switch__ImageInfo'>
-                    <span>BUILDING DREAMS FROM THE GROUND UP</span>
+                    <span>committed to providing satisfaction</span>
                     <p className='Image__title'>Design</p>
                     <p className='imageDescription'>
-                        We have been designing homes in East Idaho for over 70
-                        years. Let's design your custom home together.
+                        The vision of Codenix Engineering Consultancy Pvt. Ltd.
+                        is <br /> “To provide international standard sustainable
+                        engineering services in Nepal at an affordable rate.”
                     </p>
-                    <button className='switch__ImageInfo__button'>
-                        EXPLORE
-                    </button>
+                    <NavLink to='house-plans'>
+                        <button className='explore'>
+                            <p>explore</p>
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </section>
