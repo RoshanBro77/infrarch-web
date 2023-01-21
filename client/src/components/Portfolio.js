@@ -15,12 +15,12 @@ export default function Portfolio() {
 
     return (
         <section className='portfolio'>
-            <figure className='portfolio__card'>
+            <div className='portfolio__card'>
                 {console.table(portfolioData)}
                 {portfolioData.map((portfolio, p_id) => {
                     return <ImageCard key={p_id} {...portfolio} />
                 })}
-            </figure>
+            </div>
         </section>
     )
 }

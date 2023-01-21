@@ -1,15 +1,17 @@
 .projectShowcase {
-    margin: 4em 0;
+    width: 83%;
+    margin: 5em auto;
 }
-
-.portfolio__card:hover {
-    color: white;
-    background-color: white;
-    background: white;
+.project__Showcase,
+.project__ShowcaseTitle {
+    margin: 0.5em 0;
 }
-
 .portfolio__card {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+}
+.portfolio {
+    width: 83%;
+    margin: 0 auto;
 }

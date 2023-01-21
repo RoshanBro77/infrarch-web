@@ -54,7 +54,7 @@ export default function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <div className='btn__design'>
+                        <div className='nav__option'>
                             <NavLink
                                 to='/our-team'
                                 style={{
@@ -62,10 +62,12 @@ export default function Header() {
                                     color: 'black',
                                 }}
                             >
-                                CLIENTELE
+                                <button className='btn__design'>
+                                    CLIENTELE
+                                </button>
                             </NavLink>
                         </div>
-                        <div className='btn__design'>
+                        <div className='nav__option'>
                             <NavLink
                                 to='/our-team'
                                 style={{
@@ -73,10 +75,12 @@ export default function Header() {
                                     color: 'black',
                                 }}
                             >
-                                OUR TEAM
+                                <button className='btn__design'>
+                                    OUR TEAM
+                                </button>
                             </NavLink>
                         </div>
-                        <div className='btn__design'>
+                        <div className='nav__option'>
                             <NavLink
                                 to='/portfolio'
                                 style={{
@@ -84,10 +88,12 @@ export default function Header() {
                                     color: 'black',
                                 }}
                             >
-                                PORTFOLIO
+                                <button className='btn__design'>
+                                    PORTFOLIO
+                                </button>
                             </NavLink>
                         </div>
-                        <div className='btn__design'>
+                        <div className='nav__option'>
                             <NavLink
                                 to={'/contact'}
                                 style={{
@@ -95,7 +101,9 @@ export default function Header() {
                                     color: 'black',
                                 }}
                             >
-                                CONTACT US
+                                <button className='btn__design'>
+                                    CONTACT US
+                                </button>
                             </NavLink>
                         </div>
                     </ul>
