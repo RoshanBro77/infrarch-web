@@ -1,7 +1,0 @@
-const mongoose = require('mongoose');
-
-const portfolioModel = mongoose.model('portfolios', new mongoose.Schema({
-
-}));
-
-exports.portfolioModel = portfolioModel;

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 const Button = styled.button`
-    color: red;
-`
-export default Button
+  color: red;
+`;
+export default Button;

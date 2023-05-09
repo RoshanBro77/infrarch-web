@@ -1,32 +1,32 @@
 const mongoose = require('mongoose');
 
-const memberSchema = new mongoose.Schema({
-  member_id: {
+const portfolioSchema = new mongoose.Schema({
+  p_id: {
     type: Number,
     unique: true,
     max: 24,
     required: true,
   },
-  member_role: {
-    type: String,
-    requried: true,
-    minlength: 3,
-    maxlength: 26,
-  },
-  member_fullName: {
-    type: String,
-    requried: true,
-    minlength: 3,
-    maxlength: 26,
-  },
-  member_img: {
+  displayImg: {
     type: String,
     requried: true,
     minlength: 3,
     maxlength: 40,
   },
+  displayTitle: {
+    type: String,
+    requried: true,
+    minlength: 3,
+    maxlength: 26,
+  },
+  displayDate: {
+    type: String,
+    requried: true,
+    minlength: 8,
+    maxlength: 24,
+  },
 });
 
-const memberModel = mongoose.model('members', memberSchema);
+const portfolioModel = mongoose.model('portfolios', portfolioSchema);
 
-exports.memberModel = memberModel;
+exports.portfolioModel = portfolioModel;
